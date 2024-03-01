@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h3>Javascript set Time out</h3>
+     <p id="change"></p>
+     <button onclick="change_password()">change password</button>
+</body>
+<script>
+      function change_password(){
+         var data = prompt('Enter new password');
+
+         setTimeout(change,2000);
+
+         function change(){
+            document.getElementById('change').innerText = "new password is : "+data;
+         }
+      }
+</script>
+</html>

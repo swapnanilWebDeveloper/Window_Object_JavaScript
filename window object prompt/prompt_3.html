@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <h3></h3>
+      <h3></h3>
+      <h3></h3>
+      <button onclick="data_input()">click to enter data</button>
+</body>
+<script>
+      function data_input(){
+         var data = document.getElementsByTagName('h3');
+
+         var arr_data = ["name","college","course"];
+
+         for(var i = 0; i < data.length; i++){
+            data[i].innerText = prompt("Enter your "+arr_data[i]) ;  
+        }
+
+         for(var i = 0; i < data.length; i++){
+            data[i].innerText = arr_data[i]+ " is : "+data[i].innerText ;  
+        }
+      }
+</script>
+</html>

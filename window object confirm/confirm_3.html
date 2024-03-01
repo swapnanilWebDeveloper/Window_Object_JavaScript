@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 class="data_info">Suyendu Sarkar</h3>
+    <h3 class="data_info">Burduwan medical college</h3>
+    <h3 class="data_info">MBBS</h3>
+    <button onclick="change_data()">click to change data</button>
+    <button onclick="change_style()">click to change style</button>
+</body>
+<script>
+    function change_data(){
+        var data = document.getElementsByClassName('data_info');
+        var arr_data=["mayuk mukherjee","ritashree mukherjee","IIEST"];
+        var con = confirm("Are you sure you want to change the data");
+
+        if(con == true){
+            for(var i = 0; i < data.length; i++){
+            data[i].innerText = arr_data[i];
+          }
+        }   
+    }
+
+    function change_style(){
+        var style_data = document.getElementsByClassName('data_info');
+        var conf = confirm("Are you sure you want to change the style");
+
+        if(conf == true){
+            style_data[0].style.color = "aqua";
+            style_data[0].style.backgroundColor = "black";
+            style_data[0].style.border = "5px solid green";
+            style_data[0].style.width = "200px";
+            style_data[0].style.height = "80px";
+            style_data[0].style.marginLeft = "100px";
+        }
+       
+    }
+
+</script>
+</html>

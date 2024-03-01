@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1 id="name_data">Name</h1>
+     <h1 id="course_data">course</h1>
+     <h1 id="college_data">college</h1>
+     <button onclick="print_data()">click to give data</button>
+</body>
+<script>
+    function print_data(){
+        var data1 = prompt('Enter your name');
+        var data2 = prompt('Enter your course');
+        var data3 = prompt('Enter your college');
+
+        var name = document.getElementById('name_data');
+        var course = document.getElementById('course_data');
+        var college = document.getElementById('college_data');
+
+        name.innerText = name.innerText + " is : "+data1;
+        course.innerText = course.innerText + " is : "+data2;
+        college.innerText = college.innerText + " is : "+data3;
+    }
+</script>
+</html>

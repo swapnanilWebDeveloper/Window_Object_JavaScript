@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>Akshay Kumar</h1>
+     <button onclick="change_name()">click to change name</button>
+</body>
+<script>
+    function change_name(){
+        var con = confirm("Are you sure you want to change your name from akshay to salman??");
+        if( con == true ){
+             document.getElementsByTagName('h1')[0].innerText = "Salman Khan";
+        }
+        else{
+            document.getElementsByTagName('h1')[0].innerText = "Akshay kumar";
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>set interval in javascript</h1>
+    <p id="id_watch">THis is a watch</p>
+    <button onclick="stop_time()">click to stop time</button>
+</body>
+<script>
+       var time_id = setInterval(function(){
+        var date = new Date();
+ 
+        document.getElementById('id_watch').innerText = date;
+       },1000)
+       
+       function stop_time(){
+        clearInterval(time_id);
+       }
+</script>
+</html>

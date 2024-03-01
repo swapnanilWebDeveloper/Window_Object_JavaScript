@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>set interval in javascript</h1>
+    <p id="id_watch">THis is a watch</p>
+    <button onclick="stop_count()">click to stop count</button>
+</body>
+<script>
+       var count = 0;
+       var count_down = setInterval(function(){
+         count = count + 5;
+        document.getElementById('id_watch').innerText = "count down is upto : "+count;
+       },1000)
+       
+       function stop_count(){
+        clearInterval(count_down);
+       }
+</script>
+</html>
